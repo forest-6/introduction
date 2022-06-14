@@ -1,10 +1,20 @@
+let IMAGE_WIDTH;
+function imageWidth() {
+    if (window.matchMedia("(max-width: 700px)").matches) {
+        IMAGE_WIDTH =150;
+   }else {
+        IMAGE_WIDTH =250;
+  }
+}
+imageWidth();
+
 // tokyo slide
 let curPos = 0;
 let positionValue = 0;
-const IMAGE_WIDTH = 250;
 const backBtn = document.querySelector(".back")
 const nextBtn = document.querySelector(".next")
 const images = document.querySelector(".images")
+
 function next() {
   if (curPos< 4) {
     backBtn.removeAttribute('disabled')
@@ -33,6 +43,7 @@ function init() {
   nextBtn.addEventListener("click", next);
 }
 init();
+
 //tottori slide
 let curPos1 = 0;
 let positionValue1 = 0;
@@ -67,7 +78,8 @@ function init1() {
   nextBtn1.addEventListener("click", next1);
 }
 init1();
-//hanoi slide
+
+//danang slide
 let curPos2 = 0;
 let positionValue2 = 0;
 const backBtn2 = document.querySelector(".back2")
@@ -101,6 +113,7 @@ function init2() {
   nextBtn2.addEventListener("click", next2);
 }
 init2();
+
 //seoul slide
 let curPos3 = 0;
 let positionValue3 = 0;

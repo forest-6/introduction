@@ -1,7 +1,7 @@
 const call = document.getElementById("call");
 const mail = document.getElementById("mail");
 
-function adress() {
+function contact() {
   call.addEventListener("click", function () {
       return alert("010-0000-0000");
     })
@@ -10,4 +10,4 @@ function adress() {
     })
   }
 
-  adress();
+  contact();

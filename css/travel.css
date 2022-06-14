@@ -5,42 +5,45 @@
 body{
   margin: 0 8%;
 }
+
 /**인덱스 이동**/
 nav{
   margin-top: 50px;
 }
-
-.home{
+.icon{
   width: 120px;
   transition: 300ms;
 }
-.home:hover {
+.icon:hover {
   transform: scale(1.3);
 }
-
-.home-a{
+.icon-a{
   text-decoration: none;
   color: black;
   font-weight: bold;
 }
 
+/**제목**/
 h1{
   font-size:90px;
 }
+h2{
+  text-align: center;
+}
 
+/**본문**/
 .slide{
   display: flex;
   justify-content: center;
   margin-top: 5%;
 }
-
+.slide-1,
+.slide-2{
+  display: flex;
+}
 .container{
   width: 250px;
-  margin: 0 4%;
-  position: relative;
-}
-h2{
-  text-align: center;
+  padding: 0 40px;
 }
 .album{
   width: 250px;
@@ -48,13 +51,12 @@ h2{
   overflow: hidden;
   margin-top:
 }
-
 img{
   width: 250px;
   height: 333.333px;
 }
 
-
+/**버튼**/
 button,button:active{
   width: 30px;
   height: 30px;
@@ -66,87 +68,151 @@ button,button:active{
   background: #616161;
   border:none;
 }
-
 button:hover{
   background:#3D3D3D;
 }
-
 button:disabled{
   background: #A9A9A9;
 }
-/**--------------------------**/
+
+/**------tokyo------**/
 .images{
   position: relative;
   display: flex;
-  height: 250px;
+  height: 333.333px;
   transition: 0.8s;
 }
 .back{
-  position:absolute;
-  top:200px;
-  right: 250px;
-  margin-right: 5px;
+  position:relative;
+  bottom: 170px;
+  right: 35px;
 }
 .next{
-  position:absolute;
-  top:200px;
-  left: 250px;
-  margin-left: 5px;
+  position:relative;
+  bottom: 170px;
+  left: 220px;
 }
-/**--------------------------**/
+/**------tottori------**/
 .images1{
   position: relative;
   display: flex;
-  height: 250px;
+  height: 333.333px;
   transition: 0.8s;
 }
 .back1{
-  position:absolute;
-  top:200px;
-  right: 250px;
-  margin-right: 5px;
+  position:relative;
+  bottom: 170px;
+  right: 35px;
 }
 .next1{
-  position:absolute;
-  top:200px;
-  left: 250px;
-  margin-left: 5px;
+  position:relative;
+  bottom: 170px;
+  left: 220px;
 }
-/**--------------------------**/
+/**------danang------**/
 .images2{
   position: relative;
   display: flex;
-  height: 250px;
+  height: 333.333px;
   transition: 0.8s;
 }
 .back2{
-  position:absolute;
-  top:200px;
-  right: 250px;
-  margin-right: 5px;
+  position:relative;
+  bottom: 170px;
+  right: 35px;
 }
 .next2{
-  position:absolute;
-  top:200px;
-  left: 250px;
-  margin-left: 5px;
+  position:relative;
+  bottom: 170px;
+  left: 220px;
 }
-/**--------------------------**/
+/**------seoul------**/
 .images3{
   position: relative;
   display: flex;
-  height: 250px;
+  height: 333.333px;
   transition: 0.8s;
 }
 .back3{
-  position:absolute;
-  top:200px;
-  right: 250px;
-  margin-right: 5px;
+  position:relative;
+  bottom: 170px;
+  right: 35px;
 }
 .next3{
-  position:absolute;
-  top:200px;
-  left: 250px;
-  margin-left: 5px;
+  position:relative;
+  bottom: 170px;
+  left: 220px;
+}
+
+@media (max-width:1300px) {
+  h1{
+    font-size: 70px;
+  }
+  .slide{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media (max-width:700px) {
+  .container{
+    width: 150px;
+    padding: 0 10px;
+  }
+  .album{
+    width: 150px;
+    height: 200px;
+    overflow: hidden;
+    margin-top:
+  }
+
+  img{
+    width: 150px;
+    height: 200px;
+  }
+  /****/
+  .back{
+    position:relative;
+    bottom: 0px;
+    left: 0px;
+  }
+  .next{
+    position:relative;
+    bottom: 0px;
+    left: 85px;
+  }
+  /****/
+  .back1{
+    position:relative;
+    bottom: 0px;
+    right: 0px;
+  }
+  .next1{
+    position:relative;
+    bottom: 0px;
+    left: 85px;
+  }
+  /****/
+  .back2{
+    position:relative;
+    bottom: 0px;
+    right: 0px;
+  }
+  .next2{
+    position:relative;
+    bottom: 0px;
+    left: 85px;
+  }
+  /****/
+  .back3{
+    position:relative;
+    bottom: 0px;
+    right: 0px;
+  }
+  .next3{
+    position:relative;
+    bottom: 0px;
+    left: 85px;
+  }
 }
