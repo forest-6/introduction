@@ -11,7 +11,7 @@ nav{
   margin-top: 50px;
 }
 .icon{
-  width: 120px;
+  width: 150px;
   transition: 300ms;
 }
 .icon:hover {
@@ -22,10 +22,14 @@ nav{
   color: black;
   font-weight: bold;
 }
-
+.explain{
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
 /**제목**/
 h1{
   font-size:90px;
+  height: 110px;
 }
 h2{
   font-size: 30px;
@@ -64,12 +68,16 @@ h2{
 @media (max-width:1000px) {
   h1{
     font-size:70px;
+    height: 90px;
+  }
+  .explain{
+    margin: 0;
   }
   .favorite{
     flex-direction: row;
     align-items: flex-start;
     justify-content:center;
-    margin-top: 10%;
+    margin-top: 3%;
   }
   .music{
     margin: 0;
