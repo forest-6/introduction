@@ -1,0 +1,157 @@
+*{
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+}
+body{
+  margin: 0 8%;
+}
+.topLine{
+  display: flex;
+  justify-content:space-between;
+  align-items: baseline;
+  margin-top: 50px;
+}
+.darkMode{
+  background-color: black;
+  color:white;
+}
+/**인덱스 이동**/
+nav{
+  margin-top: 50px;
+}
+.icon{
+  width: 150px;
+  transition: 300ms;
+}
+.icon:hover {
+  transform: scale(1.3);
+}
+.icon-a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+/**다크모드**/
+.darkBtn{
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  
+}
+
+/**본문**/
+.me-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+/**글**/
+.me-text{
+  margin-top: 120px;;
+  margin-right:10%;
+}
+h1{
+  height: 100px;
+  font-size:120px;
+}
+.mind{
+  font-size: 20px;
+  margin-bottom: 13%;
+}
+
+/**이미지**/
+.me-img{
+  width: 500px;
+  height: 600px;
+  position: relative;
+}
+.me1-img{
+  width: 250px;
+  position: absolute;
+  top:0;
+}
+.me2-img{
+  width: 200px;
+  position: absolute;
+  top: 200px;
+  left:140px;
+}
+.me3-img{
+  width: 200px;
+  position: absolute;
+  left: 280px;
+  top: 70px;
+}
+
+.me1-img:hover,
+.me2-img:hover,
+.me3-img:hover{
+  z-index: 1;
+}
+
+@media(max-width:1000px) {
+  h1{
+    font-size: 80px;
+  }
+  .me-text{
+    margin:0;
+    margin:50px 0;
+  }
+  .me-main{
+    flex-direction: column;
+    align-items:center;
+
+  }
+  .me-img{
+    width: 400px;
+    height: 450px;
+  }
+  .me1-img{
+    width: 170px;
+    top:0;
+  }
+  .me2-img{
+    width: 150px;
+    top: 150px;
+    left:110px;
+  }
+  .me3-img{
+    width: 150px;
+    left: 210px;
+    top: 20px;
+  }
+  .mind{
+    margin:0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width:500px) {
+  .me-main{
+    align-items:stretch;
+  }
+  .me-text{
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .me-img{
+    width: 350px;
+    height: 450px;
+  }
+  .me1-img{
+    width: 160px;
+    top:0;
+  }
+  .me2-img{
+    width: 140px;
+    top: 150px;
+    left:90px;
+  }
+  .me3-img{
+    width: 140px;
+    top: 20px;
+    left: 190px;
+  }
+
+}

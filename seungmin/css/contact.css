@@ -1,0 +1,86 @@
+*{
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+}
+body{
+  margin: 0 8%;
+}
+.topLine{
+  display: flex;
+  justify-content:space-between;
+  align-items: baseline;
+  margin-top: 50px;
+}
+.darkMode{
+  background-color: black;
+  color:white;
+}
+
+/**인덱스 이동**/
+nav{
+  margin-top: 50px;
+}
+.icon{
+  width: 150px;
+  transition: 300ms;
+}
+.icon:hover {
+  transform: scale(1.3);
+}
+.icon-a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+/**다크모드**/
+.darkBtn{
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  
+}
+
+/**제목**/
+h1{
+  font-size:90px;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.call-img{
+  width: 300px;
+}
+
+/**링크**/
+.contact-logos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-top: 8%;
+}
+.contact-logo{
+  text-decoration: none;
+  color: black;
+  margin-left: 50px;
+  margin-right: 50px;
+  transition: 300ms ease;
+}
+.contact-logo:hover{
+  transform: scale(1.5);
+}
+
+@media (max-width:600px) {
+  h1{
+    font-size:70px;
+  }
+  .call-img{
+    width:250px;
+  }
+  .contact-logo{
+    margin:0 20px;
+  }
+}
