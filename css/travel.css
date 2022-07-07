@@ -5,7 +5,16 @@
 body{
   margin: 0 8%;
 }
-
+.topLine{
+  display: flex;
+  justify-content:space-between;
+  align-items: baseline;
+  margin-top: 50px;
+}
+.darkMode{
+  background-color: black;
+  color:white;
+}
 /**인덱스 이동**/
 nav{
   margin-top: 50px;
@@ -21,6 +30,13 @@ nav{
   text-decoration: none;
   color: black;
   font-weight: bold;
+}
+/**다크모드**/
+.darkBtn{
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  
 }
 
 /**제목**/
@@ -49,15 +65,15 @@ h2{
   width: 250px;
   height: 333.333px;
   overflow: hidden;
-  margin-top:
 }
+
 img{
   width: 250px;
   height: 333.333px;
 }
 
 /**버튼**/
-button,button:active{
+.btn,.btn:active{
   width: 30px;
   height: 30px;
   border-radius: 40px;
@@ -68,10 +84,10 @@ button,button:active{
   background: #616161;
   border:none;
 }
-button:hover{
+.btn:hover{
   background:#3D3D3D;
 }
-button:disabled{
+.btn:disabled{
   background: #A9A9A9;
 }
 
@@ -164,7 +180,6 @@ button:disabled{
     width: 150px;
     height: 200px;
     overflow: hidden;
-    margin-top:
   }
 
   img{

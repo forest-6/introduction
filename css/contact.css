@@ -5,6 +5,16 @@
 body{
   margin: 0 8%;
 }
+.topLine{
+  display: flex;
+  justify-content:space-between;
+  align-items: baseline;
+  margin-top: 50px;
+}
+.darkMode{
+  background-color: black;
+  color:white;
+}
 
 /**인덱스 이동**/
 nav{
@@ -21,6 +31,13 @@ nav{
   text-decoration: none;
   color: black;
   font-weight: bold;
+}
+/**다크모드**/
+.darkBtn{
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  
 }
 
 /**제목**/
